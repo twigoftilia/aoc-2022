@@ -13,4 +13,5 @@ opt-level = 3
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+array_tool = "1.0.3"
 nalgebra = "0.31.1"

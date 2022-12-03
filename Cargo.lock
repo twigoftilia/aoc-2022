@@ -6,6 +6,7 @@ version = 3
 name = "aoc_2022"
 version = "0.1.0"
 dependencies = [
+ "array_tool",
  "nalgebra",
 ]
 
@@ -17,6 +18,12 @@ checksum = "cab112f0a86d568ea0e627cc1d6be74a1e9cd55214684db5561995f6dad897c6"
 dependencies = [
  "num-traits",
 ]
+
+[[package]]
+name = "array_tool"
+version = "1.0.3"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "8f8cb5d814eb646a863c4f24978cff2880c4be96ad8cde2c0f0678732902e271"
 
 [[package]]
 name = "autocfg"
