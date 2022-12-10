@@ -40,3 +40,14 @@ fn test_inclusive_range(str: &str, min: &i32, max: &i32) -> bool {
     }
     false
 }
+
+#[derive(Debug)]
+pub enum Direction {
+    North,
+    East,
+    South,
+    West,
+}
+impl Direction {
+    pub const VALUES: [Self; 4] = [Self::North, Self::South, Self::East, Self::West];
+}
