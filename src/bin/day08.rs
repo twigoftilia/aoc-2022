@@ -125,8 +125,6 @@ impl ForestMap {
         let x_inner = 1..=(self.cols - 2);
         let y_inner = 1..=(self.cols - 2);
 
-        let mut ref_count = 0;
-
         // Hideous logic copies instead of matrix. Very unelegant, but who cares (but me)...
         for x in x_inner.clone() {
             let mut top_down_vision_stopped = false;
