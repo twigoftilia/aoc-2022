@@ -146,7 +146,6 @@ impl ForestMap {
                     if current_tree == 9 {
                         top_down_vision_stopped = true;
                     }
-                    ref_count += 1;
                     top_down_vision_max = top_down_vision_max.max(current_tree);
                 }
 
@@ -161,7 +160,6 @@ impl ForestMap {
                     if current_tree == 9 {
                         down_top_vision_stopped = true;
                     }
-                    ref_count += 1;
                     down_top_vision_max = down_top_vision_max.max(current_tree);
                 }
             }
@@ -187,7 +185,6 @@ impl ForestMap {
                         left_rigth_vision_stopped = true;
                     }
                     left_rigth_vision_max = left_rigth_vision_max.max(current_tree);
-                    ref_count += 1;
                 }
 
                 // right to left
@@ -203,7 +200,6 @@ impl ForestMap {
                         right_left_vision_stopped = true;
                     }
                     right_left_vision_max = right_left_vision_max.max(current_tree);
-                    ref_count += 1;
                 }
             }
         }
